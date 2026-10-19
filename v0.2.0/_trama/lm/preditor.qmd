@@ -1,0 +1,37 @@
+```{ojs}
+//| echo: false
+viewof v_lm_wt = Inputs.range([1, 6], {value: 3.5, step: 0.1, label: "wt"})
+viewof v_lm_hp = Inputs.range([50, 350], {value: 200, step: 5, label: "hp"})
+v_lm_motor_url = new URL("_trama/lm/motor.rds", document.baseURI).href
+```
+
+```{webr}
+#| edit: false
+#| echo: false
+#| input:
+#|   - v_lm_wt
+#|   - v_lm_hp
+#|   - v_lm_motor_url
+if (!file.exists("lm-motor.rds")) download.file(v_lm_motor_url, "lm-motor.rds")
+motor <- readRDS("lm-motor.rds")
+prever <- function(motor, novos) data.frame(previsto = as.numeric(predict(motor, newdata = novos)))
+novos <- data.frame(`wt` = v_lm_wt, `hp` = v_lm_hp, check.names = FALSE)
+r <- prever(motor, novos)
+cat(sprintf("mpg previsto: %s\n", format(r$previsto[[1]], digits = 6)))
+```
+
+*Pré-processamento:* Nenhum fora do modelo: a fórmula (mpg ~ wt + hp) é aplicada pelo predict() do stats.
+
+::: {.callout-note collapse="true"}
+## Versões do treino e do navegador
+
+O modelo foi ajustado com as versões da coluna *treino*; o navegador carregou as da coluna *navegador*.
+
+```{webr}
+#| edit: false
+#| echo: false
+treino <- c(`R` = "4.6.0")
+nav <- vapply(names(treino), function(p) if (p == "R") paste(R.version$major, R.version$minor, sep = ".") else tryCatch(as.character(packageVersion(p)), error = function(e) "ausente"), "")
+print(data.frame(pacote = names(treino), treino = unname(treino), navegador = unname(nav)), row.names = FALSE)
+```
+:::

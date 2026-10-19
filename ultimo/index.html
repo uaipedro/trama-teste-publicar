@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.32">
@@ -7,9 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Josiah Carberry">
-<meta name="description" content="Publicação de teste do trama (#14); pode ser apagada.">
+<meta name="author" content="Ana Lima">
+<meta name="keywords" content="carros, consumo">
+<meta name="description" content="Teste da convergência.">
 
-<title>Consumo e peso dos carros</title>
+<title>Consumo e peso</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,13 +72,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-b824aedb464f7a969b3ebebde8469cd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-41ad16ec29fb4f6777a5419d6d8b01a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="index_files/libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="index_files/libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script type="module" src="index_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="index_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="_extensions/pagina/estilo.css">
 </head>
 
 <body class="fullcontent quarto-light">
@@ -87,12 +90,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Consumo e peso dos carros</h1>
+<h1 class="title">Consumo e peso</h1>
 </div>
 
 <div>
   <div class="description">
-    Publicação de teste do trama (#14); pode ser apagada.
+    Teste da convergência.
   </div>
 </div>
 
@@ -100,9 +103,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-heading">Autores</div>
     <div class="quarto-title-meta-contents">
              <p>Josiah Carberry <a href="https://orcid.org/0000-0002-1825-0097" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Ana Lima </p>
           </div>
   </div>
     
@@ -117,12 +121,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Palavras-chave</div>
+    <p>carros, consumo</p>
+  </div>
+</div>
 
 </header>
 
 
-<p><strong>Versão</strong> 0.1.0 · <strong>Licença</strong> <a href="https://spdx.org/licenses/CC-BY-4.0">CC-BY-4.0</a> (conteúdo), <a href="https://spdx.org/licenses/MIT">MIT</a> (código) · <a href="ro-crate-metadata.json">pacote completo</a></p>
-<p><strong>Palavras-chave:</strong> mtcars, regressão</p>
+<p><strong>Versão</strong> 0.2.0 · <strong>Licença</strong> <a href="https://spdx.org/licenses/CC-BY-4.0">CC-BY-4.0</a> (conteúdo), <a href="https://spdx.org/licenses/MIT">MIT</a> (código) · <a href="ro-crate-metadata.json">pacote completo</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -148,7 +157,7 @@ Como citar
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Josiah Carberry (2026). Consumo e peso dos carros. Versão 0.1.0. trama-teste-publicar.</p>
+<p>Josiah Carberry; Ana Lima (2026). Consumo e peso. Versão 0.2.0. https://github.com/uaipedro/trama-teste-publicar.</p>
 </div>
 </div>
 </div>
@@ -168,8 +177,15 @@ Como reproduzir
 </div>
 </div>
 </div>
-<section id="tabela" class="level2">
-<h2 class="anchored" data-anchor-id="tabela">Tabela</h2>
+<section id="dados-de-exemplo" class="level2">
+<h2 class="anchored" data-anchor-id="dados-de-exemplo">Dados de exemplo</h2>
+<div id="trama-dados" class="trama" data-trama-hash="c7d8281e271d8730">
+<div id="tbl-dados" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;1: Dados de exemplo
+</figcaption>
+<div aria-describedby="tbl-dados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -187,7 +203,7 @@ Como reproduzir
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">modelo</th>
+<th style="text-align: left;">nome</th>
 <th style="text-align: right;">mpg</th>
 <th style="text-align: right;">cyl</th>
 <th style="text-align: right;">disp</th>
@@ -208,9 +224,9 @@ Como reproduzir
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">160</td>
 <td style="text-align: right;">110</td>
-<td style="text-align: right;">3.9</td>
-<td style="text-align: right;">2.62</td>
-<td style="text-align: right;">16.46</td>
+<td style="text-align: right;">3,9</td>
+<td style="text-align: right;">2,62</td>
+<td style="text-align: right;">16,46</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -222,9 +238,9 @@ Como reproduzir
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">160</td>
 <td style="text-align: right;">110</td>
-<td style="text-align: right;">3.9</td>
-<td style="text-align: right;">2.875</td>
-<td style="text-align: right;">17.02</td>
+<td style="text-align: right;">3,9</td>
+<td style="text-align: right;">2,875</td>
+<td style="text-align: right;">17,02</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -232,13 +248,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
+<td style="text-align: right;">22,8</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">108</td>
 <td style="text-align: right;">93</td>
-<td style="text-align: right;">3.85</td>
-<td style="text-align: right;">2.32</td>
-<td style="text-align: right;">18.61</td>
+<td style="text-align: right;">3,85</td>
+<td style="text-align: right;">2,32</td>
+<td style="text-align: right;">18,61</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -246,13 +262,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
+<td style="text-align: right;">21,4</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">258</td>
 <td style="text-align: right;">110</td>
-<td style="text-align: right;">3.08</td>
-<td style="text-align: right;">3.215</td>
-<td style="text-align: right;">19.44</td>
+<td style="text-align: right;">3,08</td>
+<td style="text-align: right;">3,215</td>
+<td style="text-align: right;">19,44</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -260,13 +276,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">18,7</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">360</td>
 <td style="text-align: right;">175</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">3.44</td>
-<td style="text-align: right;">17.02</td>
+<td style="text-align: right;">3,15</td>
+<td style="text-align: right;">3,44</td>
+<td style="text-align: right;">17,02</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -274,13 +290,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
+<td style="text-align: right;">18,1</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">225</td>
 <td style="text-align: right;">105</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.46</td>
-<td style="text-align: right;">20.22</td>
+<td style="text-align: right;">2,76</td>
+<td style="text-align: right;">3,46</td>
+<td style="text-align: right;">20,22</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -288,13 +304,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Duster 360</td>
-<td style="text-align: right;">14.3</td>
+<td style="text-align: right;">14,3</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">360</td>
 <td style="text-align: right;">245</td>
-<td style="text-align: right;">3.21</td>
-<td style="text-align: right;">3.57</td>
-<td style="text-align: right;">15.84</td>
+<td style="text-align: right;">3,21</td>
+<td style="text-align: right;">3,57</td>
+<td style="text-align: right;">15,84</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -302,12 +318,12 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Merc 240D</td>
-<td style="text-align: right;">24.4</td>
+<td style="text-align: right;">24,4</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">146.7</td>
+<td style="text-align: right;">146,7</td>
 <td style="text-align: right;">62</td>
-<td style="text-align: right;">3.69</td>
-<td style="text-align: right;">3.19</td>
+<td style="text-align: right;">3,69</td>
+<td style="text-align: right;">3,19</td>
 <td style="text-align: right;">20</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
@@ -316,13 +332,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Merc 230</td>
-<td style="text-align: right;">22.8</td>
+<td style="text-align: right;">22,8</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">140.8</td>
+<td style="text-align: right;">140,8</td>
 <td style="text-align: right;">95</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">22.9</td>
+<td style="text-align: right;">3,92</td>
+<td style="text-align: right;">3,15</td>
+<td style="text-align: right;">22,9</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
@@ -330,13 +346,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Merc 280</td>
-<td style="text-align: right;">19.2</td>
+<td style="text-align: right;">19,2</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
+<td style="text-align: right;">167,6</td>
 <td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.44</td>
-<td style="text-align: right;">18.3</td>
+<td style="text-align: right;">3,92</td>
+<td style="text-align: right;">3,44</td>
+<td style="text-align: right;">18,3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
@@ -344,13 +360,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Merc 280C</td>
-<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">17,8</td>
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
+<td style="text-align: right;">167,6</td>
 <td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.44</td>
-<td style="text-align: right;">18.9</td>
+<td style="text-align: right;">3,92</td>
+<td style="text-align: right;">3,44</td>
+<td style="text-align: right;">18,9</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">4</td>
@@ -358,13 +374,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Merc 450SE</td>
-<td style="text-align: right;">16.4</td>
+<td style="text-align: right;">16,4</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
+<td style="text-align: right;">275,8</td>
 <td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">4.07</td>
-<td style="text-align: right;">17.4</td>
+<td style="text-align: right;">3,07</td>
+<td style="text-align: right;">4,07</td>
+<td style="text-align: right;">17,4</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -372,13 +388,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Merc 450SL</td>
-<td style="text-align: right;">17.3</td>
+<td style="text-align: right;">17,3</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
+<td style="text-align: right;">275,8</td>
 <td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.73</td>
-<td style="text-align: right;">17.6</td>
+<td style="text-align: right;">3,07</td>
+<td style="text-align: right;">3,73</td>
+<td style="text-align: right;">17,6</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -386,12 +402,12 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Merc 450SLC</td>
-<td style="text-align: right;">15.2</td>
+<td style="text-align: right;">15,2</td>
 <td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
+<td style="text-align: right;">275,8</td>
 <td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.78</td>
+<td style="text-align: right;">3,07</td>
+<td style="text-align: right;">3,78</td>
 <td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -400,13 +416,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Cadillac Fleetwood</td>
-<td style="text-align: right;">10.4</td>
+<td style="text-align: right;">10,4</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">472</td>
 <td style="text-align: right;">205</td>
-<td style="text-align: right;">2.93</td>
-<td style="text-align: right;">5.25</td>
-<td style="text-align: right;">17.98</td>
+<td style="text-align: right;">2,93</td>
+<td style="text-align: right;">5,25</td>
+<td style="text-align: right;">17,98</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -414,13 +430,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Lincoln Continental</td>
-<td style="text-align: right;">10.4</td>
+<td style="text-align: right;">10,4</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">460</td>
 <td style="text-align: right;">215</td>
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">5.424</td>
-<td style="text-align: right;">17.82</td>
+<td style="text-align: right;">5,424</td>
+<td style="text-align: right;">17,82</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -428,13 +444,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Chrysler Imperial</td>
-<td style="text-align: right;">14.7</td>
+<td style="text-align: right;">14,7</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">440</td>
 <td style="text-align: right;">230</td>
-<td style="text-align: right;">3.23</td>
-<td style="text-align: right;">5.345</td>
-<td style="text-align: right;">17.42</td>
+<td style="text-align: right;">3,23</td>
+<td style="text-align: right;">5,345</td>
+<td style="text-align: right;">17,42</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
@@ -442,13 +458,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Fiat 128</td>
-<td style="text-align: right;">32.4</td>
+<td style="text-align: right;">32,4</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">78.7</td>
+<td style="text-align: right;">78,7</td>
 <td style="text-align: right;">66</td>
-<td style="text-align: right;">4.08</td>
-<td style="text-align: right;">2.2</td>
-<td style="text-align: right;">19.47</td>
+<td style="text-align: right;">4,08</td>
+<td style="text-align: right;">2,2</td>
+<td style="text-align: right;">19,47</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -456,13 +472,13 @@ Como reproduzir
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Honda Civic</td>
-<td style="text-align: right;">30.4</td>
+<td style="text-align: right;">30,4</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">75.7</td>
+<td style="text-align: right;">75,7</td>
 <td style="text-align: right;">52</td>
-<td style="text-align: right;">4.93</td>
-<td style="text-align: right;">1.615</td>
-<td style="text-align: right;">18.52</td>
+<td style="text-align: right;">4,93</td>
+<td style="text-align: right;">1,615</td>
+<td style="text-align: right;">18,52</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -470,13 +486,13 @@ Como reproduzir
 </tr>
 <tr class="even">
 <td style="text-align: left;">Toyota Corolla</td>
-<td style="text-align: right;">33.9</td>
+<td style="text-align: right;">33,9</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">71.1</td>
+<td style="text-align: right;">71,1</td>
 <td style="text-align: right;">65</td>
-<td style="text-align: right;">4.22</td>
-<td style="text-align: right;">1.835</td>
-<td style="text-align: right;">19.9</td>
+<td style="text-align: right;">4,22</td>
+<td style="text-align: right;">1,835</td>
+<td style="text-align: right;">19,9</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
@@ -484,14 +500,20 @@ Como reproduzir
 </tr>
 </tbody>
 </table>
-<p>32 linhas e 12 colunas; acima, as 20 primeiras. <a href="itens/ler/dados.csv">Baixar a tabela completa (CSV)</a></p>
+</div>
+</figure>
+</div>
+<p><em>Primeiras 20 de 32 linhas.</em></p>
+</div>
 </section>
 <section id="regressão-linear" class="level2">
 <h2 class="anchored" data-anchor-id="regressão-linear">Regressão linear</h2>
+<div id="trama-lm" class="trama" data-trama-hash="78c5a3dc91c9efb3">
+<p><strong>Regressão linear.</strong> Regressão linear ajustado a 32 linhas; prevê ‘mpg’ a partir de wt, hp.</p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="77" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>viewof v_lm_wt <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">6</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">3.5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"wt"</span>})</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>viewof v_lm_hp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">50</span><span class="op">,</span> <span class="dv">350</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"hp"</span>})</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>v_lm_motor_url <span class="op">=</span> <span class="kw">new</span> <span class="fu">URL</span>(<span class="st">"itens/lm/motor.rds"</span><span class="op">,</span> <span class="bu">document</span><span class="op">.</span><span class="at">baseURI</span>)<span class="op">.</span><span class="at">href</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="1" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>viewof v_lm_wt <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">6</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="fl">3.5</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"wt"</span>})</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>viewof v_lm_hp <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="dv">50</span><span class="op">,</span> <span class="dv">350</span>]<span class="op">,</span> {<span class="dt">value</span><span class="op">:</span> <span class="dv">200</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"hp"</span>})</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>v_lm_motor_url <span class="op">=</span> <span class="kw">new</span> <span class="fu">URL</span>(<span class="st">"_trama/lm/motor.rds"</span><span class="op">,</span> <span class="bu">document</span><span class="op">.</span><span class="at">baseURI</span>)<span class="op">.</span><span class="at">href</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -525,23 +547,18 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5wdXQiOlsidl9s
 </div>
 </div>
 <p><em>Pré-processamento:</em> Nenhum fora do modelo: a fórmula (mpg ~ wt + hp) é aplicada pelo predict() do stats.</p>
-</section>
-<section id="figura" class="level2">
-<h2 class="anchored" data-anchor-id="figura">Figura</h2>
-<p><img src="itens/disp/figura.png" class="img-fluid" alt="Figura"></p>
-<p><a href="itens/disp/figura.png">Baixar a figura</a></p>
-</section>
-<section id="o-fluxo" class="level2">
-<h2 class="anchored" data-anchor-id="o-fluxo">O fluxo</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="fluxo.svg" class="img-fluid figure-img" alt="Diagrama do fluxo"></p>
-<figcaption>O fluxo do trama que gerou este material.</figcaption>
-</figure>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</section>
-<section id="versões" class="level2">
-<h2 class="anchored" data-anchor-id="versões">Versões</h2>
+<div class="callout-title-container flex-fill">
+Versões do treino e do navegador
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <p>O modelo foi ajustado com as versões da coluna <em>treino</em>; o navegador carregou as da coluna <em>navegador</em>.</p>
 <div class="cell" data-edit="false">
 <div>
@@ -552,6 +569,19 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5wdXQiOlsidl9s
 eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZX0sImNvZGUiOiJ0cmVpbm8gPC0gYyhgUmAgPSBcIjQuNi4wXCIpXG5uYXYgPC0gdmFwcGx5KG5hbWVzKHRyZWlubyksIGZ1bmN0aW9uKHApIGlmIChwID09IFwiUlwiKSBwYXN0ZShSLnZlcnNpb24kbWFqb3IsIFIudmVyc2lvbiRtaW5vciwgc2VwID0gXCIuXCIpIGVsc2UgdHJ5Q2F0Y2goYXMuY2hhcmFjdGVyKHBhY2thZ2VWZXJzaW9uKHApKSwgZXJyb3IgPSBmdW5jdGlvbihlKSBcImF1c2VudGVcIiksIFwiXCIpXG5wcmludChkYXRhLmZyYW1lKHBhY290ZSA9IG5hbWVzKHRyZWlubyksIHRyZWlubyA9IHVubmFtZSh0cmVpbm8pLCBuYXZlZ2Fkb3IgPSB1bm5hbWUobmF2KSksIHJvdy5uYW1lcyA9IEZBTFNFKSJ9
 </script>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="o-fluxo" class="level2">
+<h2 class="anchored" data-anchor-id="o-fluxo">O fluxo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fluxo.svg" class="img-fluid figure-img" alt="Diagrama do fluxo"></p>
+<figcaption>O fluxo do trama que gerou este material.</figcaption>
+</figure>
 </div>
 <script type="webr-data">
 eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC42LjAvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyJdLCJyZXBvcyI6W119LCJyZW5kZXJfZGYiOiJkZWZhdWx0In0=
@@ -568,14 +598,14 @@ eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0yIiwiaW5saW5lIjpmYWxzZSwibWV0
 </div>
 </div>
 <script type="vfs-file">
-WyJpdGVucy8vbGVyL2RhZG9zLmNzdiIsIml0ZW5zLy9kaXNwL2ZpZ3VyYS5wbmciLCJpdGVucy8vbG0vd2ViLmpzb24iLCJpdGVucy8vbG0vbW9kZWxvLnJkcyIsIml0ZW5zLy9sbS9tb3Rvci5yZHMiLCJmbHV4by5zdmciLCJyby1jcmF0ZS1tZXRhZGF0YS5qc29uIl0=
+WyJfdHJhbWEvL2RhZG9zL3RyYW1hLmpzb24iLCJfdHJhbWEvL2RhZG9zL3RhYmVsYS5tZCIsIl90cmFtYS8vZGFkb3MvZGFkb3MuY3N2IiwiX3RyYW1hLy9sbS93ZWIuanNvbiIsIl90cmFtYS8vbG0vbW9kZWxvLnJkcyIsIl90cmFtYS8vbG0vbW9kZWxvLm1kIiwiX3RyYW1hLy9sbS9wcmVkaXRvci5xbWQiLCJfdHJhbWEvL2xtL3RyYW1hLmpzb24iLCJfdHJhbWEvL2xtL21vdG9yLnJkcyJd
 </script>
 </section>
 
 </main>
 <!-- /main column -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB2X2xtX3d0ID0gSW5wdXRzLnJhbmdlKFsxLCA2XSwge3ZhbHVlOiAzLjUsIHN0ZXA6IDAuMSwgbGFiZWw6IFwid3RcIn0pXG52aWV3b2Ygdl9sbV9ocCA9IElucHV0cy5yYW5nZShbNTAsIDM1MF0sIHt2YWx1ZTogMjAwLCBzdGVwOiA1LCBsYWJlbDogXCJocFwifSlcbnZfbG1fbW90b3JfdXJsID0gbmV3IFVSTChcIml0ZW5zL2xtL21vdG9yLnJkc1wiLCBkb2N1bWVudC5iYXNlVVJJKS5ocmVmXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3ZfbG1fd3QnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgndl9sbV9ocCcpIn1dfQ==
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB2X2xtX3d0ID0gSW5wdXRzLnJhbmdlKFsxLCA2XSwge3ZhbHVlOiAzLjUsIHN0ZXA6IDAuMSwgbGFiZWw6IFwid3RcIn0pXG52aWV3b2Ygdl9sbV9ocCA9IElucHV0cy5yYW5nZShbNTAsIDM1MF0sIHt2YWx1ZTogMjAwLCBzdGVwOiA1LCBsYWJlbDogXCJocFwifSlcbnZfbG1fbW90b3JfdXJsID0gbmV3IFVSTChcIl90cmFtYS9sbS9tb3Rvci5yZHNcIiwgZG9jdW1lbnQuYmFzZVVSSSkuaHJlZlxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCd2X2xtX3d0JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3ZfbG1faHAnKSJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }

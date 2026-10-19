@@ -1,0 +1,29 @@
+{
+  "no": "lm",
+  "porta": "out",
+  "tipo": "modelo",
+  "titulo": "Regressão linear",
+  "hash": "3cf22454ebbafa8ae191fd2b1c8a0233723e4946436226e1c57af50556cf6a97",
+  "chave_store": "c53e100afe93849669e81aa02e67812f",
+  "opcoes": "",
+  "dados_treino": null,
+  "metadados": {
+    "tipo_schema": "fair4ml:MLModel",
+    "descricao": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp.",
+    "propriedades": {
+      "fair4ml:mlTask": "Regression",
+      "fair4ml:modelCategory": "Regressão linear",
+      "fair4ml:usageInstructions": "Em R: readRDS('modelo.rds') com trama.models carregado e trama.models::tr_models_predict(modelo, novos). Sem o trama: readRDS('motor.rds') e a função 'prever' de web.json.",
+      "fair4ml:modelRisksBiasLimitations": null
+    }
+  },
+  "versao": "0.4.0",
+  "gerado_em": "2026-10-19T18:19:26-0300",
+  "arquivos": [
+    "modelo.rds",
+    "motor.rds",
+    "web.json",
+    "modelo.md",
+    "preditor.qmd"
+  ]
+}

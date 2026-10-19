@@ -1,0 +1,64 @@
+---
+title: Consumo e peso
+date: today
+description: Teste da convergência.
+keywords:
+  - carros
+  - consumo
+engine: knitr
+resources:
+  - _trama/
+format:
+  pagina-html: default
+trama:
+  fluxo: main
+  modelo: pagina
+  publicar:
+    licenca: CC-BY-4.0
+    licenca-codigo: MIT
+    versao: menor
+author:
+  - name: Josiah Carberry
+    orcid: 0000-0002-1825-0097
+  - name: Ana Lima
+---
+
+{{< include _extensions/pagina/_knitr.qmd >}}
+
+**Versão** {{< var versao >}} · **Licença** {{< var licenca >}} (conteúdo), {{< var licenca-codigo >}} (código) · [pacote completo](ro-crate-metadata.json)
+
+::: {.callout-note}
+## Carregando o R no seu navegador
+
+Os preditores desta página rodam em R dentro do navegador (WebR). A primeira visita baixa o R e os pacotes e leva cerca de um minuto; as seguintes usam o cache. Nenhum dado digitado sai do seu computador.
+:::
+
+::: {.callout-tip collapse="true"}
+## Como citar
+
+{{< var citacao >}}
+:::
+
+::: {.callout-tip collapse="true"}
+## Como reproduzir
+
+Baixe o pacote, instale o trama e as coleções de `ambiente.json`, traga os dados de `dados-entrada.json` (mesmo sha256) e abra `flow.json` no editor. O `README.md` traz o passo a passo.
+:::
+
+## Dados de exemplo
+
+::: {#trama-dados .trama trama-hash="c7d8281e271d8730"}
+{{< include _trama/dados/tabela.md >}}
+:::
+
+## Regressão linear
+
+::: {#trama-lm .trama trama-hash="78c5a3dc91c9efb3"}
+{{< include _trama/lm/modelo.md >}}
+
+{{< include _trama/lm/preditor.qmd >}}
+:::
+
+## O fluxo
+
+![O fluxo do trama que gerou este material.](fluxo.svg){fig-alt="Diagrama do fluxo"}

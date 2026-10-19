@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite-o como abaixo."
+type: dataset
+title: "Consumo e peso"
+abstract: "Teste da convergência."
+authors:
+  - family-names: "Carberry"
+    given-names: "Josiah"
+    orcid: "https://orcid.org/0000-0002-1825-0097"
+  - family-names: "Lima"
+    given-names: "Ana"
+version: "0.2.0"
+date-released: "2026-10-19"
+license: "CC-BY-4.0"
+keywords:
+  - "carros"
+  - "consumo"
+repository: "https://github.com/uaipedro/trama-teste-publicar"

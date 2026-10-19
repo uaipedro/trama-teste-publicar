@@ -1,0 +1,31 @@
+{
+  "pacotes": {
+    "stats": "4.6.0"
+  },
+  "entradas": [
+    {
+      "nome": "wt",
+      "tipo": "numero",
+      "min": 1,
+      "max": 6,
+      "passo": 0.1,
+      "padrao": 3.5
+    },
+    {
+      "nome": "hp",
+      "tipo": "numero",
+      "min": 50,
+      "max": 350,
+      "passo": 5,
+      "padrao": 200
+    }
+  ],
+  "saida": {
+    "tarefa": "regressao",
+    "resposta": "mpg",
+    "niveis": null,
+    "colunas": "previsto"
+  },
+  "preprocessamento": "Nenhum fora do modelo: a fórmula (mpg ~ wt + hp) é aplicada pelo predict() do stats.",
+  "prever": "function(motor, novos) data.frame(previsto = as.numeric(predict(motor, newdata = novos)))"
+}

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "rev": 6,
+  "collections": {
+    "data": "0.2.0",
+    "models": "0.4.0"
+  },
+  "nodes": {
+    "dados": {
+      "type": "data/example",
+      "type_version": 1,
+      "label": "Dados de exemplo",
+      "params": {
+        "dataset": "mtcars"
+      },
+      "seed": 214474279
+    },
+    "lm": {
+      "type": "models/lm",
+      "type_version": 1,
+      "label": "Regressão linear",
+      "params": {
+        "resposta": "mpg",
+        "preditores": ["wt", "hp"]
+      },
+      "seed": 136457267
+    }
+  },
+  "edges": [
+    {
+      "from": {
+        "node": "dados",
+        "port": "out"
+      },
+      "to": {
+        "node": "lm",
+        "port": "dados"
+      },
+      "index": 1
+    }
+  ],
+  "ui": {
+    "positions": {
+      "dados": [0, 0],
+      "lm": [260, 0]
+    },
+    "sizes": {
+      "dados": [496, 520]
+    },
+    "views": {},
+    "frames": {},
+    "modes": {},
+    "saidas": {},
+    "soltos": {},
+    "notes": {},
+    "ocultos": {},
+    "grupos": {},
+    "galeria": {},
+    "ramos": {}
+  }
+}

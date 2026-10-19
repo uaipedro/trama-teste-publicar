@@ -1,0 +1,84 @@
+{
+  "no": "dados",
+  "porta": "out",
+  "tipo": "tabela",
+  "titulo": "Dados de exemplo",
+  "hash": "f9b4796674833fe31aa7eff676f5cc478ca9b67fdfbc696a5664491b76ba18f2",
+  "chave_store": "97cc7ecb36a667ccc2523bfd673e90f5",
+  "opcoes": "",
+  "dados_treino": null,
+  "metadados": {
+    "tipo_schema": "Dataset",
+    "descricao": "Primeiras 20 de 32 linhas (12 colunas).",
+    "propriedades": {
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "nome",
+          "description": "character"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "mpg",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "cyl",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "disp",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "hp",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "drat",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "wt",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "qsec",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vs",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "am",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "gear",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "carb",
+          "description": "numeric"
+        }
+      ]
+    }
+  },
+  "versao": "0.4.0",
+  "gerado_em": "2026-10-19T18:19:25-0300",
+  "arquivos": [
+    "dados.csv",
+    "tabela.md"
+  ]
+}

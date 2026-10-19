@@ -1,4 +1,61 @@
 {
-  "nota": "Dados que o fluxo lê e que não foram ligados ao publicar: vai a descrição, não o dado. Para reproduzir, traga o arquivo com o mesmo sha256.",
-  "dados": []
+  "nota": "Dados que o fluxo lê e que não vieram inteiros no pacote: vai a descrição, não o dado. Para reproduzir, traga o arquivo com o mesmo sha256.",
+  "dados": [
+    {
+      "no": "dados",
+      "rotulo": "Dados de exemplo",
+      "bloco": "data/example",
+      "linhas": 32,
+      "colunas": [
+        {
+          "nome": "nome",
+          "classe": "character"
+        },
+        {
+          "nome": "mpg",
+          "classe": "numeric"
+        },
+        {
+          "nome": "cyl",
+          "classe": "numeric"
+        },
+        {
+          "nome": "disp",
+          "classe": "numeric"
+        },
+        {
+          "nome": "hp",
+          "classe": "numeric"
+        },
+        {
+          "nome": "drat",
+          "classe": "numeric"
+        },
+        {
+          "nome": "wt",
+          "classe": "numeric"
+        },
+        {
+          "nome": "qsec",
+          "classe": "numeric"
+        },
+        {
+          "nome": "vs",
+          "classe": "numeric"
+        },
+        {
+          "nome": "am",
+          "classe": "numeric"
+        },
+        {
+          "nome": "gear",
+          "classe": "numeric"
+        },
+        {
+          "nome": "carb",
+          "classe": "numeric"
+        }
+      ]
+    }
+  ]
 }

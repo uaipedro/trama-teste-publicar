@@ -1,0 +1,389 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "fair4ml": "https://w3id.org/fair4ml#",
+      "trama": "https://github.com/uaipedro/trama/blob/main/plugins/trama.documentos/README.md#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Consumo e peso",
+      "description": "Teste da convergência.",
+      "datePublished": "2026-10-19",
+      "version": "0.2.0",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-4.0"
+      },
+      "keywords": [
+        "carros",
+        "consumo"
+      ],
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1825-0097"
+        },
+        {
+          "@id": "#ana-lima"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "CITATION.cff"
+        },
+        {
+          "@id": "LICENSE"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "_brand.yml"
+        },
+        {
+          "@id": "_quarto.yml"
+        },
+        {
+          "@id": "_trama/dados/dados.csv"
+        },
+        {
+          "@id": "_trama/dados/tabela.md"
+        },
+        {
+          "@id": "_trama/dados/trama.json"
+        },
+        {
+          "@id": "_trama/lm/modelo.md"
+        },
+        {
+          "@id": "_trama/lm/modelo.rds"
+        },
+        {
+          "@id": "_trama/lm/motor.rds"
+        },
+        {
+          "@id": "_trama/lm/preditor.qmd"
+        },
+        {
+          "@id": "_trama/lm/trama.json"
+        },
+        {
+          "@id": "_trama/lm/web.json"
+        },
+        {
+          "@id": "_variables.yml"
+        },
+        {
+          "@id": "ambiente.json"
+        },
+        {
+          "@id": "dados-entrada.json"
+        },
+        {
+          "@id": "flow.json"
+        },
+        {
+          "@id": "fluxo.svg"
+        },
+        {
+          "@id": "index.qmd"
+        },
+        {
+          "@id": "_extensions/"
+        }
+      ]
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1825-0097",
+      "@type": "Person",
+      "name": "Josiah Carberry"
+    },
+    {
+      "@id": "#ana-lima",
+      "@type": "Person",
+      "name": "Ana Lima"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-4.0",
+      "@type": "CreativeWork",
+      "name": "CC-BY-4.0"
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT",
+      "@type": "CreativeWork",
+      "name": "MIT"
+    },
+    {
+      "@id": "CITATION.cff",
+      "@type": "File",
+      "name": "CITATION.cff",
+      "encodingFormat": "application/x-yaml",
+      "contentSize": "476",
+      "sha256": "adac4f6f9f307bd899f1795ad42695767f4685ea1cdca13e843b5c07f0181700",
+      "description": "Citação."
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "File",
+      "name": "LICENSE",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": "1485",
+      "sha256": "b5947aa0bab2c1597de4ed9463a325575c27ac59fc39d765a67eb623fda0cee0",
+      "description": "Licenças."
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "README.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1953",
+      "sha256": "7d1b8b6013cddfe9373a02774712e168dc0cd8b8aa6c26b394d733283eb27b40",
+      "description": "Como citar e reproduzir."
+    },
+    {
+      "@id": "_brand.yml",
+      "@type": "File",
+      "name": "_brand.yml",
+      "encodingFormat": "application/x-yaml",
+      "contentSize": "167",
+      "sha256": "d5dae5fe82315397192ffd386c35e829bb3835e01f02d4a25dfd168e69d3c220"
+    },
+    {
+      "@id": "_quarto.yml",
+      "@type": "File",
+      "name": "_quarto.yml",
+      "encodingFormat": "application/x-yaml",
+      "contentSize": "25",
+      "sha256": "1ddf286f8421b574cbd1706b48f79b23e474f1e824402c98271db0c8eb5000c6"
+    },
+    {
+      "@id": "_trama/dados/dados.csv",
+      "@type": "File",
+      "name": "Dados de exemplo — dados.csv",
+      "encodingFormat": "text/csv",
+      "contentSize": "1141",
+      "sha256": "57e5fb7b0c88dad5919d6f1479239af1ac582d14821d40a47a2f4b0483ef52bc",
+      "description": "Primeiras 20 de 32 linhas (12 colunas).",
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "nome",
+          "description": "character"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "mpg",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "cyl",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "disp",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "hp",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "drat",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "wt",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "qsec",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "vs",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "am",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "gear",
+          "description": "numeric"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "carb",
+          "description": "numeric"
+        }
+      ]
+    },
+    {
+      "@id": "_trama/dados/tabela.md",
+      "@type": "File",
+      "name": "Dados de exemplo — tabela.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1748",
+      "sha256": "4bb3a20e6c9ee437d11bbd3fc847ed484f383f69531c0ec4c8597a92e53bbe09",
+      "description": "Primeiras 20 de 32 linhas (12 colunas)."
+    },
+    {
+      "@id": "_trama/dados/trama.json",
+      "@type": "File",
+      "name": "Dados de exemplo — trama.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1962",
+      "sha256": "32a2bf9828b17957f0a7666301f230cc1416f8bbf6037b9519da42d80599b880",
+      "description": "Manifesto do trama: de que nó veio a região e o hash do que foi materializado."
+    },
+    {
+      "@id": "_trama/lm/modelo.md",
+      "@type": "File",
+      "name": "Regressão linear — modelo.md",
+      "encodingFormat": "text/markdown",
+      "contentSize": "96",
+      "sha256": "7ac57341c4d659daff1321c0e195452f35e95ef7c61e0a06acab628d8ceb7b09",
+      "description": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp."
+    },
+    {
+      "@id": "_trama/lm/modelo.rds",
+      "@type": [
+        "File",
+        "fair4ml:MLModel"
+      ],
+      "name": "Regressão linear — modelo.rds",
+      "encodingFormat": "application/x-r-rds",
+      "contentSize": "653",
+      "sha256": "6dd4d9112c915bfd936cced2cfa9d4825773411d81f08f86f9ecda600126513d",
+      "description": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp.",
+      "fair4ml:mlTask": "Regression",
+      "fair4ml:modelCategory": "Regressão linear",
+      "fair4ml:usageInstructions": "Em R: readRDS('modelo.rds') com trama.models carregado e trama.models::tr_models_predict(modelo, novos). Sem o trama: readRDS('motor.rds') e a função 'prever' de web.json."
+    },
+    {
+      "@id": "_trama/lm/motor.rds",
+      "@type": "File",
+      "name": "Regressão linear — motor.rds",
+      "encodingFormat": "application/x-r-rds",
+      "contentSize": "469",
+      "sha256": "dedf6b1ec4aad3afa93d625bbab506a81d6dca8266c443882c1a74f99270f144",
+      "description": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp."
+    },
+    {
+      "@id": "_trama/lm/preditor.qmd",
+      "@type": "File",
+      "name": "Regressão linear — preditor.qmd",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1410",
+      "sha256": "b20ab39dd317141916d4bbd71fca7afd8fffa9cb385eb31fd6a3b9165c39a4fd",
+      "description": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp."
+    },
+    {
+      "@id": "_trama/lm/trama.json",
+      "@type": "File",
+      "name": "Regressão linear — trama.json",
+      "encodingFormat": "application/json",
+      "contentSize": "962",
+      "sha256": "90f91916dff7caf7b998483d5f8d9af4a92409795d7b0a743a49d2de184b7153",
+      "description": "Manifesto do trama: de que nó veio a região e o hash do que foi materializado."
+    },
+    {
+      "@id": "_trama/lm/web.json",
+      "@type": "File",
+      "name": "Regressão linear — web.json",
+      "encodingFormat": "application/json",
+      "contentSize": "653",
+      "sha256": "0047a58b0639677b0d0974fb7d4c14c2b346389165a3b641c24627b8798a9f5f",
+      "description": "Regressão linear ajustado a 32 linhas; prevê 'mpg' a partir de wt, hp."
+    },
+    {
+      "@id": "_variables.yml",
+      "@type": "File",
+      "name": "_variables.yml",
+      "encodingFormat": "application/x-yaml",
+      "contentSize": "253",
+      "sha256": "1d75c67dbec748880d9979846f20d680f36dbd97629167086f266fc90e3b3dc5",
+      "description": "Versão, licenças e citação que o documento mostra."
+    },
+    {
+      "@id": "ambiente.json",
+      "@type": "File",
+      "name": "ambiente.json",
+      "encodingFormat": "application/json",
+      "contentSize": "194",
+      "sha256": "e68dc193c872d4f33b28195d0e6c5e20f9c825af5e27f26b244293725be8da1a",
+      "description": "Versões de R, do trama, das coleções e dos pacotes."
+    },
+    {
+      "@id": "dados-entrada.json",
+      "@type": "File",
+      "name": "dados-entrada.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1241",
+      "sha256": "4f8053338dea7daa480f3a0ead1cd63d414e2b2ebefb12a6f9a5c2e1d9f1ba8e",
+      "description": "Descrição e sha256 dos dados de entrada não incluídos."
+    },
+    {
+      "@id": "flow.json",
+      "@type": "File",
+      "name": "flow.json",
+      "encodingFormat": "application/json",
+      "contentSize": "1023",
+      "sha256": "0f73723affe7e3f62a563bc3fe36b4f151a1512ddcab11f6da71636841ac0c8d",
+      "description": "O fluxo do trama que gerou os resultados; abre no editor.",
+      "conformsTo": {
+        "@id": "https://github.com/uaipedro/trama/blob/main/inst/schema/document-v1.json"
+      }
+    },
+    {
+      "@id": "fluxo.svg",
+      "@type": "File",
+      "name": "fluxo.svg",
+      "encodingFormat": "image/svg+xml",
+      "contentSize": "788",
+      "sha256": "fc8edae75285a2325c20ba2530df2720ae0c80f583e144cd99bf1b20b7b0f2e0",
+      "description": "Diagrama do fluxo."
+    },
+    {
+      "@id": "index.qmd",
+      "@type": "File",
+      "name": "index.qmd",
+      "encodingFormat": "text/markdown",
+      "contentSize": "1554",
+      "sha256": "f1b940ab5f859bf51107a7ef966910af9d8bd448bc5864852fbed5d7e9defe21",
+      "description": "O documento: texto dos autores e os resultados do trama (Quarto)."
+    },
+    {
+      "@id": "https://github.com/uaipedro/trama/blob/main/inst/schema/document-v1.json",
+      "@type": "CreativeWork",
+      "name": "Documento do trama, formato 1 (JSON Schema)"
+    },
+    {
+      "@id": "_extensions/",
+      "@type": "Dataset",
+      "name": "Modelo do documento (extensão Quarto), com o quarto-live 0.2.0 (r-wasm/quarto-live, MIT)",
+      "url": "https://github.com/r-wasm/quarto-live"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "r": "4.6.0",
+  "trama": "0.5.25",
+  "colecoes": {
+    "trama.data": "0.4.7",
+    "trama.documentos": "0.4.0",
+    "trama.models": "0.6.12",
+    "trama.view": "0.2.9"
+  },
+  "pacotes": {}
+}
