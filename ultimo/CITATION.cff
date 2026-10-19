@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Se usar este material, cite-o como abaixo."
+type: dataset
+title: "Consumo e peso dos carros"
+abstract: "Publicação de teste do trama (#14); pode ser apagada."
+authors:
+  - family-names: "Carberry"
+    given-names: "Josiah"
+    orcid: "https://orcid.org/0000-0002-1825-0097"
+version: "0.1.0"
+date-released: "2026-10-19"
+license: "CC-BY-4.0"
+keywords:
+  - "mtcars"
+  - "regressão"

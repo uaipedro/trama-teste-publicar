@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "rev": 16,
+  "collections": {
+    "data": "0.2.0",
+    "view": "0.2.0",
+    "models": "0.4.0",
+    "publicar": "0.1.0"
+  },
+  "nodes": {
+    "ler": {
+      "type": "data/read",
+      "type_version": 1,
+      "label": "Ler dados",
+      "params": {
+        "path": "carros.csv"
+      },
+      "seed": 196109359
+    },
+    "disp": {
+      "type": "view/points",
+      "type_version": 1,
+      "label": "Disperso",
+      "params": {
+        "x": "wt",
+        "y": "mpg"
+      },
+      "seed": 187783772
+    },
+    "lm": {
+      "type": "models/lm",
+      "type_version": 1,
+      "label": "Regressão linear",
+      "params": {
+        "resposta": "mpg",
+        "preditores": "wt, hp"
+      },
+      "seed": 117704075
+    },
+    "pub": {
+      "type": "publicar/publish",
+      "type_version": 1,
+      "label": "Publicar",
+      "params": {
+        "titulo": "Consumo e peso dos carros",
+        "descricao": "Publicação de teste do trama (#14); pode ser apagada.",
+        "autores": "Josiah Carberry (0000-0002-1825-0097)",
+        "palavras_chave": "mtcars, regressão",
+        "layout": "[{\"tipo\":\"cabecalho\"},{\"tipo\":\"item\",\"id\":\"ler\"},{\"tipo\":\"item\",\"id\":\"lm\"},{\"tipo\":\"item\",\"id\":\"disp\"},{\"tipo\":\"fluxo\"}]",
+        "repositorio": "trama-teste-publicar"
+      },
+      "seed": 212316642
+    }
+  },
+  "edges": [
+    {
+      "from": {
+        "node": "ler",
+        "port": "out"
+      },
+      "to": {
+        "node": "disp",
+        "port": "dados"
+      },
+      "index": 1
+    },
+    {
+      "from": {
+        "node": "ler",
+        "port": "out"
+      },
+      "to": {
+        "node": "lm",
+        "port": "dados"
+      },
+      "index": 1
+    },
+    {
+      "from": {
+        "node": "ler",
+        "port": "out"
+      },
+      "to": {
+        "node": "pub",
+        "port": "itens"
+      },
+      "index": 1
+    },
+    {
+      "from": {
+        "node": "disp",
+        "port": "out"
+      },
+      "to": {
+        "node": "pub",
+        "port": "itens"
+      },
+      "index": 2
+    },
+    {
+      "from": {
+        "node": "lm",
+        "port": "out"
+      },
+      "to": {
+        "node": "pub",
+        "port": "itens"
+      },
+      "index": 3
+    }
+  ],
+  "ui": {
+    "positions": {
+      "ler": [0, 0],
+      "disp": [320, -220],
+      "lm": [320, 120],
+      "pub": [700, 0]
+    },
+    "sizes": {
+      "ler": [496, 520],
+      "pub": [240, 224]
+    },
+    "views": {},
+    "frames": {},
+    "modes": {},
+    "saidas": {},
+    "soltos": {},
+    "notes": {},
+    "ocultos": {},
+    "grupos": {},
+    "galeria": {},
+    "ramos": {}
+  }
+}
