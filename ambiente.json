@@ -1,0 +1,12 @@
+{
+  "r": "4.6.0",
+  "trama": "0.5.18",
+  "colecoes": {
+    "trama.data": "0.4.4",
+    "trama.github": "0.1.1",
+    "trama.models": "0.6.10",
+    "trama.publicar": "0.2.0",
+    "trama.view": "0.2.8"
+  },
+  "pacotes": {}
+}
