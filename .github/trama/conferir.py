@@ -1,4 +1,4 @@
-# Gerado pelo trama.publicar: confere o pacote antes de publicar.
+# Gerado pelo trama.documentos: confere o pacote antes de publicar.
 # - ro-crate-metadata.json é RO-Crate 1.1 (descritor, dataset raiz e campos);
 # - todo arquivo descrito existe, com o tamanho e o sha256 declarados;
 # - todo arquivo do pacote está descrito (fora .github, .git e a extensão).

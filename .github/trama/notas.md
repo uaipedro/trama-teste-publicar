@@ -1,4 +1,4 @@
-Pacote reprodutível gerado pelo trama: `ro-crate-metadata.json`, o fluxo (`flow.json`), os itens e a página.
+Pacote reprodutível gerado pelo trama: o documento (`index.qmd`), os resultados em `_trama/`, o fluxo (`flow.json`) e `ro-crate-metadata.json`.
 
-- Página desta versão: https://uaipedro.github.io/trama-teste-publicar/v0.1.0/
-- Como citar: Josiah Carberry (2026). Consumo e peso dos carros. Versão 0.1.0. trama-teste-publicar.
+- Página desta versão: https://uaipedro.github.io/trama-teste-publicar/v0.2.0/
+- Como citar: Josiah Carberry; Ana Lima (2026). Consumo e peso. Versão 0.2.0. https://github.com/uaipedro/trama-teste-publicar.

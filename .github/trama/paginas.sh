@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Gerado pelo trama.publicar: acumula as páginas na branch `paginas`.
+# Gerado pelo trama.documentos: acumula as páginas na branch `paginas`.
 # /vX.Y.Z/ é imutável (versão já publicada faz falhar), /ultimo/ é a mais
 # nova, e a raiz leva para /ultimo/. O site do Pages é a branch inteira, que
 # o próximo passo empacota: o deploy substitui o site, então ele precisa

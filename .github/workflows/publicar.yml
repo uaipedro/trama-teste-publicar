@@ -1,4 +1,4 @@
-# Gerado pelo trama.publicar. A tag vX.Y.Z dispara: confere o pacote,
+# Gerado pelo trama.documentos. A tag vX.Y.Z dispara: confere o pacote,
 # renderiza a página, cria a release com o pacote zipado e publica no Pages,
 # mantendo as versões antigas em /vX.Y.Z/ e a mais nova em /ultimo/.
 # Versões fixadas de propósito: a página publicada não muda porque uma ação
